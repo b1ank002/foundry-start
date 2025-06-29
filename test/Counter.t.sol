@@ -12,7 +12,7 @@ contract CounterTest is Test {
         counter = new Counter();
     }
 
-    function test_InitialNumber() public {
+    function test_InitialNumber() public view {
         assertEq(counter.number(), 0);
 
         console.log(address(this));

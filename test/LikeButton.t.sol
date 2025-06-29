@@ -15,7 +15,7 @@ contract LikeButtonTest is Test {
         likeContract = new LikeButton();
     }
 
-    function test_InitState() public {
+    function test_InitState() public view {
         assertEq(likeContract.totalLikes(), 0);
         assertFalse(likeContract.liked(userVolodya));
         assertFalse(likeContract.liked(userOlya));
